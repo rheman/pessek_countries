@@ -1,0 +1,36 @@
+{
+	"name": "pessek/pessek_countries",
+	"type": "elgg-plugin",
+	"description": "Countries for Elgg",
+	"keywords": [
+		"elgg", "plugin", "countries"
+	],
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Hermand PESSEK",
+			"email": "rhemandaddy@gmail.com"
+		}
+	],
+    	"extra": {
+        	"installer-name": "pessek_countries"
+    	},
+	"autoload": {
+		"psr-0": {
+			"": "classes/"
+		}
+	},
+	"require": {
+		"npm-asset/svg-country-flags": "^1.2",
+		"composer/installers": "^1.0.8"
+	},
+	"repositories": [
+		{
+            		"type": "composer",
+            		"url": "https://asset-packagist.org"
+		}
+	],
+        "conflict": {
+                "elgg/elgg": "<4.0"
+        }
+}
